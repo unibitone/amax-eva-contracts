@@ -4,6 +4,10 @@ out = "out"
 libs = ["lib"]
 solc = "0.8.28"
 auto_detect_solc = false
+gas_price = 1000000000 # Legacy gas price (in wei, e.g., 1 Gwei)
+max_fee_per_gas = 40000000000 # Max fee for EIP-1559 (e.g., 40 Gwei)
+max_priority_fee_per_gas = 2000000000 # Priority fee (e.g., 2 Gwei)
+gas_limit = 30000000 # Gas limit for transactions
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
 
